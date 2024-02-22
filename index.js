@@ -354,3 +354,172 @@
 
 // TERNARY OPERATOR ? :
 
+// let age = 21;
+// let message = age >= 18 ? "You're an adult" : "You're a minor";
+// console.log(message)
+
+// let time = 16;
+// let greeting = time < 12 ? "Good morning" : "Good afternoon";
+// console.log(greeting);
+
+// let isStudent = true;
+// let message = isStudent ? "U r a student" : "U r NOT a student";
+// console.log(message);
+
+// let purchaseAmount = 125;
+// let message = purchaseAmount >= 100 ? 10 : 0;
+// console.log(`Your total is $${purchaseAmount - purchaseAmount * (message / 100)}`);
+//----------------------------------------------------------------------------------
+
+// SWITCH
+
+// let day = 6;
+
+// switch (day) {
+//     case 1:
+//         console.log('It is Monday');
+//         break;
+//     case 2:
+//         console.log('It is Tuesday');
+//         break;
+//     case 3:
+//         console.log('It is Wednesday');
+//         break;
+//     case 4:
+//         console.log('It is Thursday');
+//         break;
+//     case 5:
+//         console.log('It is Friday');
+//         break;
+//     case 6:
+//         console.log('It is Saturday');
+//         break;
+//     case 7:
+//         console.log('It is Sunday');
+//         break;
+//     default:
+//         console.log(`${day} is not a valid day!`);
+//         break;
+// }
+
+// let testScore = 52;
+// let letterGrade;
+
+// switch (true) {
+//     case testScore >= 90:
+//         letterGrade = "A"
+//         break;
+//     case testScore >= 80:
+//         letterGrade = "B"
+//         break;
+//     case testScore >= 70:
+//         letterGrade = "C"
+//         break;
+//     case testScore >= 60:
+//         letterGrade = "D"
+//         break;
+//     default:
+//         letterGrade = "F"
+//         break;
+// }
+
+// console.log(letterGrade);
+//----------------------------------------------------------------------------------
+
+// STRING METHODS
+
+// let username = "BillCypher";
+
+// The first charater of a string
+// console.log(username.charAt(0));
+
+// The index position of a character (start from 0)
+// console.log(username.indexOf("i"));
+
+// The last index position of a character (start from 0)
+// console.log(username.lastIndexOf("l"));
+
+// The length of a string
+// console.log(username.length);
+
+// Remove blank space
+// username = username.trim();
+// console.log(username);
+
+// Return the string in upercase/lowercase
+// username = username.toUpperCase();
+// console.log(username);
+// username = username.toLowerCase();
+// console.log(username);
+
+// Repeat th string Nth times
+// username = username.repeat(3);
+// console.log(username);
+
+// To check if the string starts/ends/includes with a specific character
+// let result = username.startsWith(" ")
+
+// if (result) {
+//     console.log(`Your username can not start with ' '`);
+// } else {
+//     console.log(username);
+// }
+
+// let response = username.endsWith(" ")
+
+// if (response) {
+//     console.log(`Your username can not end with ' '`);
+// } else {
+//     console.log(username);
+// }
+
+// let include = username.includes(" ")
+
+// if (include) {
+//     console.log(`Your username can not include with ' '`);
+// } else {
+//     console.log(username);
+// }
+
+// Replace characters
+// let phonenumber = "123-456-7890";
+
+// phonenumber = phonenumber.replaceAll("-", "");
+// console.log(phonenumber)
+
+// Pads a string from the start/end with another string (multiple times) until it reaches a given length
+// let phonenumber = "123-456-7890";
+
+// phonenumber = phonenumber.padStart(15, "0");
+// console.log(phonenumber)
+
+// phonenumber = phonenumber.padEnd(15, "0");
+// console.log(phonenumber)
+//----------------------------------------------------------------------------------
+
+// STRING SLICING
+
+// const fullName = "Billy Cypher";
+
+// let firstName = fullName.slice(0, 4);
+// let lastName = fullName.slice(5, 11);
+
+// let firstChar = fullName.slice(0, 1);
+// let lastChar = fullName.slice(-1);
+
+// console.log(lastChar);
+// console.log(firstChar);
+// console.log(firstName);
+// console.log(lastName);
+
+// let firstname = fullName.slice(0, fullName.indexOf(" "));
+// console.log(firstname);
+// let lastname = fullName.slice(fullName.indexOf(" ")).trim();//or fullName.slice(fullName.indexOf(" ") + 1)
+// console.log(lastname);
+
+// const email = 'billy101@gmail.com'
+
+// let username = email.slice(0, email.indexOf("@"));
+// let extension = email.slice(email.indexOf("@") + 1);
+// console.log(username)
+// console.log(extension)
