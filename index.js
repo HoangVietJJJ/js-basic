@@ -523,3 +523,182 @@
 // let extension = email.slice(email.indexOf("@") + 1);
 // console.log(username)
 // console.log(extension)
+//----------------------------------------------------------------------------------
+
+// METHOD CHAINING
+
+// ---- NO METHOD CHAINING ----
+
+// let username = window.prompt("Enter your username: ")
+
+// username = username.trim();
+// let letter = username.charAt(0);
+// letter = letter.toUpperCase();
+
+// let extraChar = username.slice(1);
+// extraChar = extraChar.toLowerCase();
+
+// username = letter + extraChar;
+
+// console.log(username);
+
+// ---- WITH METHOD CHAINING ----
+
+// let username = window.prompt("Enter your username: ")
+
+// username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
+
+// console.log(username);
+//----------------------------------------------------------------------------------
+
+// LOGICAL OPERATORS && - || - !
+
+// const temp = 25;
+
+// if (temp > 0 && temp <= 30) {
+//     console.log("The weather is GOOD")
+// }
+// else {
+//     console.log("The weather is BAD")
+// }
+
+// const temp = 250;
+
+// if (temp <= 0 || temp > 30) {
+//     console.log("The weather is BAD")
+// }
+// else {
+//     console.log("The weather is GOOD")
+// }
+
+// const isSunny = false;
+
+// if (!isSunny) {
+//     console.log("It is cloudy ")
+// } else {
+//     console.log("It is sunny")
+// }
+//----------------------------------------------------------------------------------
+
+// STRICT EQUALITY
+
+// = assignment operator
+// == comparision operator (compare if values are equal)
+// === strict equality operator (compare if values & datatypes are equal)
+// != inequality operator
+// !== strict in equality operator
+
+// const PI = 3.14;
+
+// if (PI === "3.14") {
+//     console.log("That is Pi")
+// } else {
+//     console.log("That is NOT Pi")
+// }
+//----------------------------------------------------------------------------------
+
+// WHILE LOOP
+
+// let username = "";
+
+// while (username === "" || username === null) {
+//     username = window.prompt(`Enter your name:`)
+// }
+
+// console.log(`Hello ${username}`)
+
+// let username;
+
+// do {
+//     username = window.prompt(`Enter your name:`)
+// } while (username === "" || username === null)
+
+// console.log(`Hello ${username}`)
+
+// let loggedIn = false;
+// let username;
+// let password;
+
+// while (!loggedIn) {
+//     username = window.prompt(`ENTER YOUR USERNAME`)
+//     password = window.prompt(`ENTER YOUR PASSWORD`)
+
+//     if (username === "Bill" && password === "pass") {
+//         loggedIn = true
+//         console.log(`You are in`)
+//     } else {
+//         console.log(`invalid infomation`)
+//     }
+// }
+
+// let loggedin = true;
+
+// do {
+//     username = window.prompt(`ENTER YOUR USERNAME`)
+//     password = window.prompt(`ENTER YOUR PASSWORD`)
+
+//     if (username === "Bill" && password === "pass") {
+//         loggedin = true
+//         console.log(`You are in`)
+//     } else {
+//         console.log(`invalid infomation`)
+//     }
+// } while (!loggedin)
+//----------------------------------------------------------------------------------
+
+// FOR LOOP
+
+// for (let i = 10; i > 0; i--) {
+//     console.log(i)
+// }
+
+// console.log(`HAPPY NEW YEAR`)
+
+// for (let i = 1; i <= 20; i++) {
+//     if (i == 13) {
+//         continue
+//     } else {
+//         console.log(i)
+//     }
+// }
+
+// for (let i = 1; i <= 20; i++) {
+//     if (i == 13) {
+//         break
+//     } else {
+//         console.log(i)
+//     }
+// }
+//----------------------------------------------------------------------------------
+
+// NUMBER GUESSING GAME
+
+const minNum = 1;
+const maxNum = 100;
+const answer = Math.floor(Math.random() * (maxNum - minNum + 1));
+
+let attemp = 0;
+let guess;
+let running = true;
+
+while (running) {
+
+    guess = window.prompt(`Guess a number between ${minNum} - ${maxNum}`)
+    guess = Number(guess)
+
+    if (isNaN(guess)) {
+        window.alert("pls enter a valid number")
+    } else if (guess < minNum || guess > maxNum) {
+        window.alert("pls enter a valid number")
+    } else {
+        attemp++;
+        if (guess < answer) {
+            window.alert("YOUR NUMBER IS TOO LOW")
+        } else if (guess > answer) {
+            window.alert("YOUR NUMBER IS TOO HIGH")
+        } else {
+            window.alert(`CONGRATULATION!THE NUMBER ${answer} is a correct number. IT TOOK YOU ${attemp} attemps`)
+            running = false
+        }
+    }
+}
