@@ -1,6 +1,7 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size  : 2em;
+    font-family     : Verdana, Geneva, Tahoma, sans-serif;
+    font-size       : 1em;
+    background-color: hsl(0, 10%, 90%);
 }
 
 // COUNTER PROGRAM
@@ -50,6 +51,57 @@ body {
 
 // CHECKED PROPERTY
 
-#mySubmit {
-    font-size: 1em;
-}
+// #mySubmit {
+//     font-size: 1em;
+// }
+//<!-- -------------------------------------------------------------------- -->
+
+// TEMPERATURE CONVERSION PROGRAM
+
+// form {
+//     background-color: hsl(0, 0%, 100%);
+//     text-align      : center;
+//     max-width       : 350px;
+//     margin          : auto;
+//     padding         : 25px;
+//     border-radius   : 10px;
+//     box-shadow      : 5px 5px 15px hsl(0, 0%, 46%);
+
+//     h1 {
+//         color: hsl(240, 98%, 44%);
+//     }
+
+//     #tetxBox {
+//         width        : 50%;
+//         text-align   : center;
+//         font-size    : 2em;
+//         border       : 2px solid hsl(0, 2%, 35%);
+//         border-radius: 2px;
+//         margin-bottom: 15px;
+//     }
+
+//     label {
+//         font-size  : 1.5em;
+//         font-weight: bold;
+//     }
+
+//     button {
+//         margin-top      : 15px;
+//         background-color: hsl(0, 91%, 50%);
+//         font-size       : 1.5em;
+//         border          : none;
+//         padding         : 10px 15px;
+//         border-radius   : 5px;
+//         color           : white;
+//         cursor          : pointer;
+
+//         &:hover {
+//             background-color: hsl(12, 100%, 50%);
+//         }
+//     }
+
+//     #result {
+//         font-size  : 1.75em;
+//         font-weight: bold;
+//     }
+// }

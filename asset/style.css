@@ -1,8 +1,5 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2em;
-}
-
-#mySubmit {
   font-size: 1em;
+  background-color: #e8e3e3;
 }

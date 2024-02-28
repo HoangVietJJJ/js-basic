@@ -673,32 +673,147 @@
 
 // NUMBER GUESSING GAME
 
-const minNum = 1;
-const maxNum = 100;
-const answer = Math.floor(Math.random() * (maxNum - minNum + 1));
+// const minNum = 1;
+// const maxNum = 100;
+// const answer = Math.floor(Math.random() * (maxNum - minNum + 1));
 
-let attemp = 0;
-let guess;
-let running = true;
+// let attemp = 0;
+// let guess;
+// let running = true;
 
-while (running) {
+// while (running) {
 
-    guess = window.prompt(`Guess a number between ${minNum} - ${maxNum}`)
-    guess = Number(guess)
+//     guess = window.prompt(`Guess a number between ${minNum} - ${maxNum}`)
+//     guess = Number(guess)
 
-    if (isNaN(guess)) {
-        window.alert("pls enter a valid number")
-    } else if (guess < minNum || guess > maxNum) {
-        window.alert("pls enter a valid number")
-    } else {
-        attemp++;
-        if (guess < answer) {
-            window.alert("YOUR NUMBER IS TOO LOW")
-        } else if (guess > answer) {
-            window.alert("YOUR NUMBER IS TOO HIGH")
-        } else {
-            window.alert(`CONGRATULATION!THE NUMBER ${answer} is a correct number. IT TOOK YOU ${attemp} attemps`)
-            running = false
-        }
-    }
-}
+//     if (isNaN(guess)) {
+//         window.alert("pls enter a valid number")
+//     } else if (guess < minNum || guess > maxNum) {
+//         window.alert("pls enter a valid number")
+//     } else {
+//         attemp++;
+//         if (guess < answer) {
+//             window.alert("YOUR NUMBER IS TOO LOW")
+//         } else if (guess > answer) {
+//             window.alert("YOUR NUMBER IS TOO HIGH")
+//         } else {
+//             window.alert(`CONGRATULATION!THE NUMBER ${answer} is a correct number. IT TOOK YOU ${attemp} attemps`)
+//             running = false
+//         }
+//     }
+// }
+//----------------------------------------------------------------------------------
+
+// FUNCTION
+
+// function happuBirthday(username, age) {
+//     console.log("happy birthday to you!")
+//     console.log("happy birthday to you!")
+//     console.log(`happy birthday dear ${username}!`)
+//     console.log("happy birthday to you!")
+//     console.log(`you are ${age} years old!`)
+// }
+
+// happuBirthday('Bill', 21);
+
+// function add(x, y) {
+//     let result = x + y;
+//     return result;
+// }
+
+// let answer = add(3, 5);
+// console.log(answer)
+
+// function isEven(number) {
+//     if (number % 2 === 0) {
+//         console.log(`${number} is an even number`)
+//     } else {
+//         console.log(`${number} is NOT an even number`)
+//     }
+// }
+
+// isEven(10)
+
+// function isValid(email) {
+//     if (email.includes("@")) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+
+// console.log(isValid('Bill@gmali.com'))
+//----------------------------------------------------------------------------------
+
+// VERIABLE SCOPE
+
+// function function1() {
+//     let x = 1;
+//     console.log(x)
+// }
+
+// function function2() {
+//     let x = 2;
+//     console.log(x)
+// }
+
+// function2();
+//----------------------------------------------------------------------------------
+
+// TEMPERATURE CONVERSION PROGRAM
+
+// const textBox = document.getElementById('tetxBox')
+// const toF = document.getElementById('toF')
+// const toC = document.getElementById('toC')
+// const result = document.getElementById('result')
+
+// let temp;
+
+// function convert() {
+//     if (toF.checked) {
+//         temp = Number(textBox.value);
+//         temp = (temp * 9 / 5) + 32;
+//         result.textContent = temp.toFixed(1) + "°F"
+//     } else if (toC.checked) {
+//         temp = Number(textBox.value);
+//         temp = (5 / 9) * (temp - 32);
+//         result.textContent = temp.toFixed(1) + "°C"
+//     } else {
+//         result.textContent = 'SELECT A UNIT!!!'
+//     }
+// }
+//----------------------------------------------------------------------------------
+
+// ARRAY
+
+// let fruits = ["apple", "banana", "orange", "pear", "dragon fruit"];
+
+// fruits.push("coconut");// add a new item to the last position of an array
+// fruits.pop();// remove the last item of an array
+// fruits.unshift("mango");// add a new item to the begining of an array
+// fruits.shift();// remove the first item of an array
+
+// console.log(fruits[0])
+// console.log(fruits[1])
+// console.log(fruits[2])
+// console.log(fruits[3])
+
+// let numOfFruits = fruits.length; // length of array
+// let index = fruits.indexOf("apple"); // find the index of an matching item
+
+// console.log(index)
+
+// for (let i = 0; i < fruits.length; i++) {
+//     console.log(fruits[i])
+// }
+
+// for (let i = fruits.length - 1; i >= 0; i--) {
+//     console.log(fruits[i])
+// }
+
+// fruits.sort();
+// fruits.sort().reverse();
+
+// for (let fruit of fruits) {
+//     console.log(fruit)
+// }
